@@ -6,7 +6,7 @@ interface Transforming {
     // TODO: поворот фигуры вокруг точки (centerX, centerY) на 90 градусов
 }
 
-enum class RotateDirection {
-    // направление вращения фигуры на 90 градусов
-    Clockwise, CounterClockwise
+enum class RotateDirection(val clockwise: Boolean) {
+    Clockwise(true),
+    CounterClockwise(false)
 }
